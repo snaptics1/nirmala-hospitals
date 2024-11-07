@@ -110,10 +110,10 @@ nav {
     width: 100%;
 }
 
-.nav {
+/* .nav {
     width: 80%;
     display: block !important;
-}
+} */
 
 .nav1 {
     display: flex;
@@ -232,12 +232,23 @@ nav {
     border-radius: 20px;
     background: linear-gradient(180deg, #358E83 0%, #0F2825 100%);
 }
+@media(max-width:786px) {
+    .world {
+        border-radius: 0px; 
+    } 
+}
 
 .world-h1 {
     font-size: 46px;
     line-height: 3.8rem;
     font-weight: 700;
     padding: 10px 0px;
+}
+@media(max-width:786px) {
+    .world-h1 {
+        font-size: 26px;
+        line-height: 1.8rem;
+    }
 }
 
 .bg-over {

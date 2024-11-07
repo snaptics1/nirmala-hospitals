@@ -18,13 +18,17 @@ nav {
     margin: 0px auto;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
 
 }
 
 
 .logo {
-    width: 20%;
-
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
 }
 
 .logo img {
@@ -119,7 +123,7 @@ nav {
 .nav-button a {
   background-color: #358e83;
   padding: 8px 22px;
-  border-radius: 6px;
+  border-radius: 100px;
   border: 1px solid #358e83;
   text-decoration: none;
   color: white;
@@ -192,6 +196,14 @@ nav {
 @media(max-width:768px){
   .h1 {
     display: block;
+  }
+  .responsive-get{
+    position: static !important;
+    width: 100% !important;
+    margin: 25px 0px;
+  }
+  .email-text{
+    font-size: 12px !important;
   }
 }
 .about-h1{
@@ -349,7 +361,7 @@ nav {
     }
 
     .logo {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -361,10 +373,11 @@ nav {
     }
 
     .bar {
-        display: block;
-        margin: 0px auto;
-    }
-
+      display: block;
+      margin: 0px auto;
+      text-align: right;
+      width: 100%;
+  }
     .bar i {
         font-size: 38px;
         display: inline-block;
@@ -1411,25 +1424,9 @@ text-align: left;
      
 }
 
-.slick-prev, .slick-next {
-   /* Background color of arrows */
-  color: #fff;              /* Icon color */
-  border-radius: 50%;       /* Make the arrow circular */
-  width: 40px;
-  height: 40px;
-  z-index: 132094890;               /* Ensure arrows are above the slider */
-}
 
-.slick-prev:hover, .slick-next:hover {
-     /* Background color on hover */
-}
-.slick-prev {
-  left: 0px;
-}
 
-.slick-next {
-  right: 0px;
-}
+
 
 
 .whatapp{
