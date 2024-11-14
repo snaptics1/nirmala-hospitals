@@ -128,7 +128,7 @@ nav {
   width: 100% ;
 }
 
-.nav2 ul {
+.nav2 >     ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;

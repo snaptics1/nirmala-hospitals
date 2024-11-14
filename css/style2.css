@@ -53,7 +53,7 @@ nav {
   width: 100% ;
 }
 
-.nav2 ul {
+.nav2 > ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -63,11 +63,11 @@ nav {
     width: 100%;
     margin-bottom: 0px;
 }
-.nav2 ul li{
+.nav2 >ul> li{
   border-radius: 2px;
 }
 
-.nav2 ul li a {
+.nav2 ul> li >a {
     text-decoration: none;
     color: rgb(42, 39, 39);
     font-family: 'roboto', sans-serif;
@@ -1858,4 +1858,28 @@ input[type='text'], input[type='address'], input[type='url'], input[type='passwo
 }
 .contact-one::before{
   
+}
+.slick-slider{
+  z-index: -1;
+}
+.dropdown {
+  position: relative;
+ 
+}
+
+.dropdown-content {
+  display: none !important;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px 6px;
+  border-radius: 10px;
+  z-index: 267857;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block !important;
+  z-index: 2 !important;
 }
