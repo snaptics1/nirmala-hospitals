@@ -1883,3 +1883,31 @@ input[type='text'], input[type='address'], input[type='url'], input[type='passwo
   display: block !important;
   z-index: 2 !important;
 }
+.main-title{
+  font-size: 50px;
+    font-weight: 600;
+}
+.main-title-1{
+  font-size: 30px;
+    font-weight: 500;
+}
+.elementor-size-default{
+  color: #000d44;
+    font-size: 37px;
+    font-weight: 600;
+}
+.elementor-widget-container li{
+  list-style: inside !important;
+}
+.new-color{
+  background-color: #F4F7F9;
+  padding: 30px ;
+  border-radius: 10px;
+  
+}
+.accordion-body p{
+  color: black !important;
+}
+.collapse {
+  visibility: initial !important;
+}
