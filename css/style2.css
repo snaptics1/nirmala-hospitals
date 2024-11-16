@@ -424,9 +424,9 @@ padding: 0px;
     background-color: #358e83;
     color: white;
 }
-.barside ul li:hover a{
+/* .barside ul li:hover a{
     color: white;
-}
+} */
 .barside ul li a{
     text-decoration: none;
     color: black;
@@ -1871,24 +1871,50 @@ input[type='text'], input[type='address'], input[type='url'], input[type='passwo
   display: none !important;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 140px;
+  min-width: 187px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 10px 6px;
   border-radius: 10px;
   z-index: 267857;
   
 }
-
+.dropdown-content li{
+  padding: 7px 0px;
+}
 .dropdown:hover .dropdown-content {
   display: block !important;
   z-index: 2 !important;
 }
+.dropdown-inner{
+  position: relative;
+}
+.dropdown-inner-content{
+ display: none !important;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px 6px;
+  border-radius: 10px;
+  z-index: 267857;
+  top: 0px;
+  right: -81%;
+
+}
+.dropdown-inner:hover .dropdown-inner-content{
+display: block !important; 
+}
+.dropdown-inner-content li{
+  padding: 10px 0px;
+}
+
+
 .main-title{
-  font-size: 50px;
+  font-size:45px;
     font-weight: 600;
 }
 .main-title-1{
-  font-size: 30px;
+  font-size: 25px;
     font-weight: 500;
 }
 .elementor-size-default{
@@ -1910,4 +1936,15 @@ input[type='text'], input[type='address'], input[type='url'], input[type='passwo
 }
 .collapse {
   visibility: initial !important;
+}
+.elementor-widget-container ul li{
+  padding: 7px 0px !important;
+  line-height: 1.8rem;
+  font-size: 16px !important;
+}
+.elementor-widget-container img{
+  border-radius: 10px;
+}
+a:not([href]):not([class]){
+  color: rgb(42, 39, 39) !important;
 }
