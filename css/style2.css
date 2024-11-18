@@ -1922,7 +1922,10 @@ display: block !important;
     font-size: 37px;
     font-weight: 600;
 }
-.elementor-widget-container li{
+.new-ul-dots li{
+  list-style: inside !important;
+}
+.elementor-widget-container li li{
   list-style: inside !important;
 }
 .new-color{
