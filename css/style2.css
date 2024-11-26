@@ -1951,3 +1951,11 @@ display: block !important;
 a:not([href]):not([class]){
   color: rgb(42, 39, 39) !important;
 }
+
+header{
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background: white;
+  z-index: 999999;
+}

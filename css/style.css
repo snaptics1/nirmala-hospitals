@@ -232,6 +232,12 @@ nav {
     border-radius: 20px;
     background: linear-gradient(180deg, #358E83 0%, #0F2825 100%);
 }
+.world2{
+    max-width: 1400px;
+
+    margin: 30px auto;
+    border-radius: 20px;  
+}
 @media(max-width:786px) {
     .world {
         border-radius: 0px; 

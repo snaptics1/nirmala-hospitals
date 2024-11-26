@@ -23,6 +23,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
+        .preview-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: none !important;
+  }
 
 
     </style>
@@ -431,7 +443,7 @@
                             </ul>
 
 
-                            <div class="flex justify-start items-center gap-10 ">
+                            <div class="flex justify-start items-center gap-10 flex-wrap ">
                                 <div class="">
                                     <button
                                         class="btn  bg-[#358E83] text-white font-[Poppins] text-sm md:text-lg pl-2  md:pl-6 py-0 md:py-2 py-1  pr-1  rounded-full">Appointment
@@ -440,7 +452,7 @@
                                     </button>
                                 </div>
 
-                                <div class="flex justify-between px-4  items-center gap-2">
+                                <div class="flex justify-between md:px-4  items-center gap-2">
                                     <div class=" w-[35px] h-[35px]   flex justify-center items-center">
                                         <img src="./img/call.png" class="w-full" alt="">
                                     </div>
@@ -482,7 +494,7 @@
 
                 <div
                     class="flex md:justify-between justify-center md:px-0 px-5 md:flex-wrap flex-wrap items-center  my-10 relative  z-2">
-                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-10 rounded-lg services-box ">
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box ">
                         <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Obstetrics</h4>
                         <ul class="py-4 services-ui">
                             <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
@@ -493,7 +505,7 @@
                         </ul>
                     </div>
 
-                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-10 rounded-lg services-box">
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
                         <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Gynecology</h4>
                         <ul class="py-4 services-ui">
                             <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
@@ -508,7 +520,7 @@
                     </div>
 
 
-                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-10 rounded-lg services-box">
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
                         <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Orthopaedics</h4>
                         <ul class="py-4 services-ui">
                             <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
@@ -521,16 +533,16 @@
                                 &nbsp; Hip Replacement</li>
                         </ul>
                     </div>
-                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-10 rounded-lg services-box">
+                    <div class="md:w-1/4 w-full h-[300px]  bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
                         <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Orthopaedics</h4>
                         <ul class="py-4 services-ui">
                             <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
                                 &nbsp; Pain Management</li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
                                 &nbsp; Spine Surgery</li>
-                            <li class="py-2 font-[Poppins] text-[13px]"><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
                                 &nbsp; Endoscopic Spine Surgery</li>
-                            <li class="py-2 font-[Poppins] text-[13px]"><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
                                 &nbsp; Regenerative Medicine
                             </li>
                         </ul>
@@ -538,143 +550,194 @@
 
 
 
-                    <div class="md:w-1/4 w-full bg-[url(./img/services.png)] bg-cover p-10 rounded-lg services-box">
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
                         <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Pediatrics</h4>
                         <ul class="py-4 services-ui">
-                            <li class="py-2 font-[Poppins] text-[13px]"> <i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
                                 &nbsp; Essential Newborn Care</li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
                                 &nbsp; Immunization</li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
                                 &nbsp; Infertility</li>
-                            <li class="py-2 font-[Poppins] text-[13px]"><i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
                                 &nbsp; General Pediatric Services</li>
                         </ul>
                     </div>
-                    <div class="md:w-1/4 w-full bg-[url(./img/services.png)] bg-cover p-10 rounded-lg services-box">
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
                         <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">General Surgery</h4>
                         <ul class="py-4 services-ui">
-                            <li class="py-2 font-[Poppins] text-[13px]"> <i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
                                 &nbsp;Gastro Intestinal Surgery </li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
                                 &nbsp; Hernia Surgery</li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
                                 &nbsp; Diabetic Foot</li>
-                            <li class="py-2 font-[Poppins] text-[13px]"><i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
                                 &nbsp;Laparoscopy</li>
                         </ul>
                     </div>
-                    <div class="md:w-1/4 w-full bg-[url(./img/services.png)] bg-cover p-10 rounded-lg services-box">
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
                         <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">General Surgery</h4>
                         <ul class="py-4 services-ui">
                             <li class="py-2 font-[Poppins]"> <i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
                                 &nbsp; Breast Surgery</li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
                                 &nbsp; Protocology
-                            <ul>
-                                <li><i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp; &nbsp; Piles</li>
-                                <li><i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp; &nbsp; Fissures</li>
-                                <li><i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp; &nbsp; Fistual</li>
-                            </ul>
                             </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Piles
+                            </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Fissures
+                            </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Fistual
+                            </li>
+                              
+                            
+                            
                           
                         </ul>
                     </div>
 
+
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
+                        <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">General medicine</h4>
+                        <ul class="py-4 services-ui">
+                            <li class="py-2 font-[Poppins]"> <i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
+                                &nbsp; Lorem ipsum </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Lorem ipsum
+                            </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Lorem ipsum
+                            </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Lorem ipsum
+                            </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Lorem ipsum
+                            </li>
+                              
+                            
+                            
+                          
+                        </ul>
+                    </div>
 
 
                 </div>
 
                 <!-- second 2 -->
+                 
+                <!-- third 3-->
                 <div
-                    class="flex md:justify-between justify-center md:px-0 px-5 md:flex-nowrap flex-wrap items-center gap-4">
-                    <div
-                        class="md:w-1/4 w-full bg-[white] md:bg-transparent md:bg-[url(./img/services2.png)] bg-cover p-10 rounded-lg services-box  justify-center items-center h-[130px] md:h-[230px]">
+                    class="flex md:justify-center justify-center md:px-0 px-5 md:flex-nowrap flex-wrap items-center  my-10">
+
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
                         <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Anesthesia</h4>
                         <ul class="py-4 services-ui">
-                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; painless delivary </li>
-                            <li class="py-2 font-[Poppins] text-[13px] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp;post operative analgesia</li>
+                            <li class="py-2 font-[Poppins]"> <i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
+                                &nbsp;    painless delivary</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; post operative analgesia
+                            </li>
+                            
+                            
+                              
+                            
+                            
+                          
+                        </ul>
+                    </div>
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
+                        <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Lab Services</h4>
+                        <ul class="py-4 services-ui">
+                            <li class="py-2 font-[Poppins]"> <i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
+                                &nbsp; Hematology</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Pathology
+                            </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Serology
+                            </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Biochemistry
+                            </li>
+                            
+                              
+                            
+                            
                           
                         </ul>
                     </div>
 
-                    <div
-                        class="md:w-1/4 w-full bg-[white] md:bg-transparent md:bg-[url(./img/services2.png)] bg-cover p-10 rounded-lg services-box flex justify-center items-center h-[130px] md:h-[230px]">
-                        <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Pediatrics</h4>
 
-                    </div>
-
-
-                    <div
-                        class="md:w-1/4 w-full bg-[white] md:bg-transparent md:bg-[url(./img/services2.png)] bg-cover p-10 rounded-lg services-box flex justify-center items-center h-[130px] md:h-[230px]">
-                        <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">General Surgery</h4>
-
-                    </div>
-
-
-
-                    <div
-                        class="md:w-1/4 w-full bg-[white] md:bg-transparent md:bg-[url(./img/services2.png)] bg-cover p-10 rounded-lg services-box flex justify-center items-center h-[130px] md:h-[230px]">
-                        <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">General medicine</h4>
-
-                    </div>
-
-                </div>
-                <!-- third 3-->
-                <div
-                    class="flex md:justify-center justify-center md:px-0 px-5 md:flex-nowrap flex-wrap items-center gap-4 my-10">
-                    <div class="md:w-[28%] w-full bg-[url(./img/services3.png)] bg-cover p-10 rounded-lg services-box">
-                        <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Lab Services</h4>
-                        <ul class="py-4 services-ui">
-                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; Hematology</li>
-                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; Pathology</li>
-                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; Serology</li>
-                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; Biochemistry</li>
-                        </ul>
-                    </div>
-
-                    <div class="md:w-[28%] w-full bg-[url(./img/services3.png)] bg-cover p-10 rounded-lg services-box">
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
                         <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Diagnostic Services</h4>
                         <ul class="py-4 services-ui">
-                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                            <li class="py-2 font-[Poppins]"> <i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
                                 &nbsp; Laparoscopy</li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; Hysteroscopy</li>
+                                &nbsp; Hysteroscopy
+                            </li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; Infertility</li>
+                                &nbsp; Infertility
+                            </li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; Cosmetic Gynic</li>
+                                &nbsp; Cosmetic Gynic
+                            </li>
+                            
+                              
+                            
+                            
+                          
                         </ul>
                     </div>
+                 
 
-
-                    <div
-                        class="md:w-[28%] w-full bg-[url(./img/services3.png)] bg-cover p-10 rounded-lg services-box z-[9]">
+                    <div class="md:w-1/4 w-full h-[300px] bg-[url(./img/services.png)] bg-cover p-5 rounded-lg services-box">
                         <h4 class="font-[Poppins] text-[#358E83] text-2xl font-semibold">Other Services</h4>
                         <ul class="py-4 services-ui">
-                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                            <li class="py-2 font-[Poppins]"> <i class="fa-solid fa-star text-[#358E83] text-sm"></i>&nbsp;
                                 &nbsp; 24/7 Emergency care</li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; ICU</li>
+                                &nbsp; ICU
+                            </li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; Pharmacy</li>
+                                &nbsp; Pharmacy
+                            </li>
                             <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
-                                &nbsp; Ambulance</li>
-                            <!-- <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp; &nbsp; Ambulance</li> -->
+                                &nbsp; Ambulance
+                            </li>
+                            
+                              
+                            
+                            
+                          
                         </ul>
                     </div>
+
+                    
+                   
+
+
+                   
 
 
 
 
 
                 </div>
+            </div>
+
+            <div class="text-center" data-aos="fade-left" data-aos-duration="1000">
+                <button
+                    class="btn  bg-[#358E83] text-white font-[Poppins] text-sm md:text-lg pl-2  md:pl-6 py-0 md:py-2 py-1  pr-1  rounded-full">
+                    <a href="./Tests/">
+                    view Tests
+                </a> <i class="fa-solid fa-arrow-right text-[#358E83] ml-2 rounded-full bg-[white] py-1 px-1"></i>
+                </button>
             </div>
         </div>
 
@@ -691,7 +754,7 @@
         <div class="absolute top-0 left-0 w-[52%] h-[500px]  z-1">
             <img src="./img/MeetdocotrsBAckground.png" alt="">
         </div>
-        <div class="flex md:justify-between justify-center md:px-12 px-5 flex-nowrap  items-center gap-4 my-10">
+        <div class=" world2 flex md:justify-between justify-center   flex-nowrap  items-center gap-4 my-10">
             <div class="">
                 <h1 class="world-h1   font-[Roboto]  text-[#358E83]" data-aos="fade-right" data-aos-duration="1000">
                     Meet Our Doctors</h1>
@@ -870,6 +933,7 @@
         <div class="custom-container">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
+                    <div class="swiper-button-prev preview-btn"></div> <!-- Previous Preview -->
                     <!-- 1 -->
                     <div class="swiper-slide">
                         <div
@@ -904,6 +968,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <!-- 2 -->
                     <div class="swiper-slide">
                         <div
@@ -971,6 +1036,40 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800">
+
+                            <div class="p-4 space-y-2 text-sm dark:text-gray-600 font-[Roboto]">
+                                <p>The care and attention I received at Nirmala Hospitals were exceptional. The staff
+                                    made me feel comfortable and well- informed throughout my treatment. I highly
+                                    recommend their services.</p>
+                            </div>
+                            <div class="flex justify-between p-4">
+                                <div class="flex space-x-4">
+                                    <div>
+                                        <img src="./img/rajeshwara.png" alt=""
+                                            class="object-cover w-12 h-12 rounded-full dark:bg-gray-500">
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Rajeshwara Gupta</h4>
+                                        <span class="text-xs dark:text-gray-600">2 days ago</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2 dark:text-yellow-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        class="w-5 h-5 fill-current">
+                                        <path
+                                            d="M494,198.671a40.536,40.536,0,0,0-32.174-27.592L345.917,152.242,292.185,47.828a40.7,40.7,0,0,0-72.37,0L166.083,152.242,50.176,171.079a40.7,40.7,0,0,0-22.364,68.827l82.7,83.368-17.9,116.055a40.672,40.672,0,0,0,58.548,42.538L256,428.977l104.843,52.89a40.69,40.69,0,0,0,58.548-42.538l-17.9-116.055,82.7-83.368A40.538,40.538,0,0,0,494,198.671Zm-32.53,18.7L367.4,312.2l20.364,132.01a8.671,8.671,0,0,1-12.509,9.088L256,393.136,136.744,453.3a8.671,8.671,0,0,1-12.509-9.088L144.6,312.2,50.531,217.37a8.7,8.7,0,0,1,4.778-14.706L187.15,181.238,248.269,62.471a8.694,8.694,0,0,1,15.462,0L324.85,181.238l131.841,21.426A8.7,8.7,0,0,1,461.469,217.37Z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-xl font-bold">4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="swiper-button-next preview-btn"></div> <!-- Next Preview -->
 
                 </div>
             </div>
@@ -1036,7 +1135,7 @@
 
     <!-- footer -->
     <footer class="px-4 divide-y dark:bg-gray-100 dark:text-gray-800 bg-[url(./img/Footerbackground.png)]">
-        <div class="custom-container flex justify-between items-center py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+        <div class="custom-container flex justify-between flex-col  items-center py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
             <div class="lg:w-1/3">
                 <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
                     <div class="flex items-center justify-center w-[70%] h-12 ">
@@ -1120,6 +1219,11 @@
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 30,
+            navigation: {
+      nextEl: ".swiper-button-next", // Next button
+      prevEl: ".swiper-button-prev", // Previous button
+    },
+   
             freeMode: true,
             pagination: {
                 el: ".swiper-pagination",
