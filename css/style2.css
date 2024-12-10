@@ -397,18 +397,23 @@ nav {
 
 .barside {
     display: block;
-    width: 40%;
+    width: 50%;
     position: fixed;
     background-color: white;
     border-right: 1px solid #b5b5b5;
-    height: 93.5%;
-    top: 8.7%;
+    height: 100vh;
+    top: 0;
     left: -100%;
-    z-index: 999;
+    z-index: 99978676876;
     transition: 0.5s;
+    padding: 20px 0px;
 
 }
-
+.timeing{
+  font-size: 20px;
+  margin: 10px 0px;
+  font-weight: bold;
+}
 .barside1 {
     left: 0px;
     transition: 0.5s;
@@ -451,12 +456,13 @@ padding: 0px;
         margin-left: 5px;
     }
 
-    .barside {
-        top: 6.5%;
-        height: 93.5%;
-    }
+    
     .nav-button{
       display: none;
+    }
+    .cloud-button{
+      margin: 20px 10px;
+      display: block !important;
     }
 }
 .n-about{
