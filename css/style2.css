@@ -414,10 +414,7 @@ nav {
   margin: 10px 0px;
   font-weight: bold;
 }
-.barside1 {
-    left: 0px;
-    transition: 0.5s;
-}
+
 .barside ul{
 list-style:none;
 padding: 0px;
@@ -446,7 +443,10 @@ padding: 0px;
         height: 310px;
         object-fit: cover;
     }
-
+    .barside1 {
+      left: 0px;
+      transition: 0.5s;
+  }
     .logo img {
         width: 100%;
     }
@@ -1964,4 +1964,7 @@ header{
   left: 0px;
   background: white;
   z-index: 999999;
+}
+.elementor-element-b115492 .elementor-widget-container{
+  margin-top: 36px;
 }
